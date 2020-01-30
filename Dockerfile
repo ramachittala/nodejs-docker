@@ -1,4 +1,4 @@
-FROM openshift/nodejs-mongodb-example:10
+FROM node:10
 
 WORKDIR /usr/src/app
 
@@ -14,5 +14,5 @@ RUN npm install
 # Bundle app source
 COPY . .
 
-EXPOSE 8080
+EXPOSE 8080CMD [ "node", "server.js" ]
 CMD [ "node", "server.js" ]

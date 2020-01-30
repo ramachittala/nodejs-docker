@@ -8,7 +8,7 @@ pipeline {
        }
        stage('Build the app') {
           steps {
-            sh 'oc new-build . --strategy=docker'
+            sh 'oc new-app . --strategy=docker'
           }
        }
     }
