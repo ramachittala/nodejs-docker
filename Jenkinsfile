@@ -8,7 +8,7 @@ pipeline {
        }
        stage('SCM CHECK'){ 
            steps {
-            sh 'git clone git@github.ibm.com:rchit013/nodejs-docker.git' 
+            sh 'git clone https://github.com/ramachittala/nodejs-docker.git' 
            }
        }
        stage('Build the app') {
